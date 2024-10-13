@@ -1,0 +1,14 @@
+#apiVersion:
+kind: DestinationRule
+metadata:
+  name: default
+  namespace: giropops
+spec:
+  host: "*.giropops.svc.cluster.local"
+  trafficPolicy:
+    tls: 
+      mode: ISTIO_MUTUAL
+
+#Qual request que tem como destino *.giropops.svc.cluster.local vai
+#ter ISTIO_MANUAL por default
+

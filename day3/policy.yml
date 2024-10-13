@@ -1,0 +1,12 @@
+#ApiVersion:
+kind: "Policy"
+metadata: 
+  name: "httpbin"
+  namespace: strigus
+spec:
+  targes: 
+    name: httpbin
+    ports: 
+    - number: 8000
+peers:
+- mtls: {}
